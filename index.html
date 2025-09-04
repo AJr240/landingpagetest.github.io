@@ -108,12 +108,10 @@
 
     .card img {
       width: 200px;
-      /* puedes probar entre 60px y 120px */
       height: auto;
       display: block;
       margin: 0 auto 15px;
       object-fit: cover;
-      /* centrado horizontal */
     }
 
     .app-demo img {
@@ -213,7 +211,6 @@
       justify-content: center;
       gap: 15px;
       flex-wrap: wrap;
-      /* en móvil se acomodan en columna */
     }
 
     .registro-modal .choice-btn {
@@ -329,7 +326,7 @@
     </button>
   </header>
 
-  <!-- Sección Beneficios -->
+  <!-- Benefits Section -->
   <section class="reveal">
     <h2>¿Por qué unirte a RicoMap?</h2>
     <div class="benefits">
@@ -371,7 +368,7 @@
     <p>📧 admin@ricomap.com</p>
   </footer>
 
-  <!-- Modal Registro -->
+  <!-- Modal Register -->
   <div class="modal" id="modal">
     <div class="modal-content">
       <div class="modal-content registro-modal">
@@ -387,7 +384,7 @@
         </div>
       </div>
 
-      <!-- Form Cliente -->
+      <!-- Form Client -->
       <form id="formCliente">
         <label for="nombreC">Nombre Completo</label>
         <input type="text" id="nombreC" required />
@@ -402,7 +399,7 @@
         <input type="submit" value="Registrarme" />
       </form>
 
-      <!-- Form Restaurante -->
+      <!-- Form Restaurant -->
       <form id="formRestaurante">
         <label for="nombreR">Nombre del restaurante</label>
         <input type="text" id="nombreR" required />
@@ -505,7 +502,7 @@
     );
     sections.forEach((section) => observer.observe(section));
 
-    // Modales
+    // Modals
     let formCliente = document.getElementById("formCliente");
     let formRestaurante = document.getElementById("formRestaurante");
 
@@ -535,7 +532,7 @@
       });
     };
 
-    // Zoom imágenes app-demo
+    // Zoom img app-demo
     const demoImages = document.querySelectorAll(".app-demo img");
     demoImages.forEach((img) => {
       img.addEventListener("click", () => {
